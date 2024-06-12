@@ -1,5 +1,11 @@
+import "./api/client";
+
 function App() {
-  return <>React Query + OpenAPI Demo</>;
+  return (
+    <>
+      <h1>TanStack Query 🤝 OpenAPI </h1>
+    </>
+  );
 }
 
 export default App;

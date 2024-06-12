@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typegen": "npx openapi-typescript https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/api.github.com/api.github.com.json -o ./src/api/github.ts"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.45.0",
+    "openapi-fetch": "^0.9.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -16,6 +19,8 @@
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
+    "openapi-typescript": "^6.7.6",
+    "openapi-typescript-helpers": "^0.0.8",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   }
